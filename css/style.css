@@ -1,0 +1,97 @@
+body{
+	min-height: 100%;
+	background-color: #ccc;
+}
+
+textarea{
+	background-color: #fff;
+	color: #000;
+	padding: 15px 20px 30px;
+	font-size: 1.8rem;
+	line-height: 22px; 
+	min-height: 300px;
+}
+
+h3{
+	background-color: #999;
+	margin-top: 0;
+	padding:30px 0;
+	text-align: center;
+	color: #fff;	
+	font-size: 3rem;
+	font-style: oblique;
+}
+
+.btn-group{
+	text-align: center;
+}
+
+.save-btn,
+.clear-btn{
+	padding: 0 30px;
+	font-size: 1.8rem;
+	height: 50px;
+	line-height: 50px;
+	border-width: 0;
+	border-radius: 10px;
+	transition: all 0.4s;
+}
+
+.save-btn{
+	background-color: limegreen;
+}
+
+.clear-btn{
+	background-color: red;
+}
+
+.save-btn:active{
+    background-image: radial-gradient(limegreen,#006900);
+}
+
+.clear-btn:active{
+	background-image: radial-gradient(red,#820202);
+}
+
+.sidebar-layout{
+	margin: 0 auto;
+	max-width: 1100px;
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.control-panel{
+	padding-left: 10px;
+}
+
+.control-panel p{
+	font-weight: 500;
+	font-size: 1.8rem;
+}
+
+.sidebar-layout .sidebar{
+	width: 100%;
+	background-color: #ddd;
+	height: 100%;
+}
+
+.main-content .center-wrapper{
+	padding: 30px;
+}
+
+.sidebar-layout .main-content{
+	width: 100%;
+}
+
+@media screen and (min-width: 700px){
+	.sidebar-layout{
+		flex-direction: row;
+	}
+
+	.sidebar-layout .sidebar{
+		width: 400px;
+	}
+}
+
+
